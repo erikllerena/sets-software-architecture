@@ -1,0 +1,72 @@
+framework:
+  name: "SETS — Software Engineering Training System"
+  version: "1.3.1"
+  independent: true
+  project_domain: "Software Architecture & Design"
+  objective_role: "Software Architect"
+
+student:
+  goal: "Desarrollar criterio profesional demostrable para el rol de Software Architect"
+  role_context: "Full Stack Developer"
+  familiar_technologies:
+    - "Java y Spring Boot"
+    - "Angular y APIs"
+    - "SQL y NoSQL"
+    - "AWS, Azure y GCP"
+    - "Monolitos y microservicios"
+  assessed_level: null # Sin diagnóstico; experiencia NO es evidencia de dominio.
+  preferred_language: "es"
+  technical_vocabulary: "es/en"
+
+tracks:
+  immediate:
+    enabled: true
+    objective: "Preparación para entrevista de diseño y arquitectura"
+    interview_date: null
+    role_description: null
+    format: null
+    interview_language: null
+    minutes_available_per_day: null
+  permanent:
+    enabled: true
+    objective: "Crecimiento sostenido como Software Architect"
+
+interaction:
+  depth: "adaptive"           # introductory / adaptive / advanced
+  challenge_intensity: "medium" # low / medium / high
+  default_hints: "on_request" # on_request / after_two_attempts
+  default_question_load: 1
+  allow_direct_explanations: true
+  mentoring_style: "exigente, preciso, respetuoso, socrático sin evasivas"
+  show_scores: "at_checkpoints" # at_checkpoints / on_request
+  confidence_calibration: "occasionally"
+  encourage_disagreement: true
+  test_with_novel_cases: true
+  use_interview_follow_ups: true
+  no_unnecessary_jargon: true
+
+practice:
+  starting_stack: ["Java", "Spring Boot", "PostgreSQL", "MongoDB", "Docker"]
+  allow_other_stacks: true
+  prefer_verifiable_small_deliverables: true
+  require_assumptions_labeled: true
+  require_tradeoff_reasoning: true
+  keep_architecture_pragmatic: true
+  allow_non_coding_exercises: true
+
+assessment:
+  range: [0, 4]
+  mastery_evidence_min: 2
+  require_novel_independent_transfer: true
+  require_critical_issues_resolved: true
+  prefer_delayed_retention_check: true
+  record_hint_level: true
+
+continuity:
+  canonical_summary: "state/LEARNING_STATE.md"
+  append_only_evidence: "state/EVIDENCE_LOG.md"
+  last_handoff: "state/LAST_HANDOFF.md"
+  handoff_guide: "sets-framework/core/SESSION_HANDOFF.md"
+  auto_project_file_updates: false
+  offer_full_state_replacement_at_close: true
+  suggest_review_days_after_session: [1, 3, 7, 21]
