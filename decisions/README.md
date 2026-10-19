@@ -1,5 +1,3 @@
-# Decisiones arquitectónicas
+# ADRs — Software Architecture & Design
 
-Guardar ADRs aquí cuando se hayan redactado, debatido y revisado en sesiones reales. Usa la plantilla `sets-framework/templates/ADR_TEMPLATE.md` como referencia.
-
-Nombres sugeridos: `0001-eleccion-modularidad.md`, `0002-idempotencia-pagos.md`. Una decisión puede revisarse; documenta la razón del cambio.
+Documentar decisiones reales del ámbito de este programa con plantilla `sets-framework/templates/ADR_TEMPLATE.md`. Las decisiones compartidas entre capas deben ser propiedad del programa integral; enlazar en lugar de duplicar.

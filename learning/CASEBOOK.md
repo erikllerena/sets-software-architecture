@@ -1,47 +1,42 @@
-# SETS 1.3.1 — Biblioteca de casos, cambios de contexto y consecuencias
+# CASEBOOK — Arquitectura integral y razonamiento causal (v1.5.0)
 
-## Caso conductor: MercadoLocal (ficticio; los valores son **supuestos para practicar**)
-Plataforma para navegar catálogo, reservar inventario, crear pedidos, cobrar y notificar. Se evita obligar a usar microservicios por moda. Cada iteración introduce un riesgo nuevo; el estudiante decide y defiende **sin conocer la respuesta de antemano**.
+Los escenarios son ficticios; las cifras introducidas durante una sesión son supuestos educativos, no datos medidos. El tutor puede elegir diagramas, contratos, pseudocódigo o cualquier lenguaje que ayude a comprender. No es necesario programar cada caso.
 
-### Nivel 0: negocio naciente
-**Supuestos:** 4 desarrolladores, 3 000 pedidos/día, un mercado, Spring Boot + PostgreSQL, presupuesto ajustado. **Reto:** límites de módulos e invariantes, diseño desplegable, seguridad esencial, operación mínima y alternativa de evolución. **Entregables:** 1 diagrama (C4 o equivalente), 1 ADR, 2 riesgos y una validación barata.
+## Caso conductor: Plataforma Horizonte
 
-### Nivel 1: doble reserva de inventario
-Pedidos concurrentes consumen el mismo último artículo. **Reto:** formular la invariante; proponer prueba que reproduzca fallo, opciones de sincronización/transacción y plan de evaluación bajo carga. **Entregable:** caso de prueba + decisión contextual.
+Plataforma con aplicación web, clientes móviles potenciales, servicios de negocio, pagos, inventario, analítica y operación. Comienza como un MVP pequeño y cambia a medida que aparecen nuevos requisitos.
 
-### Nivel 2: proveedor de pagos ambiguo
-Un timeout HTTP puede ocurrir **después del cobro**. **Reto:** idempotencia extremo a extremo, reconciliación, reintentos seguros y trazabilidad. **Entregable:** flujo bajo fallo + contrato + observabilidad.
+| Iteración | Cambio de contexto | Núcleo conceptual a comprender | Evidencia posible |
+|---|---|---|---|
+| H0 — Primer MVP | Equipo pequeño, una región, presupuesto limitado | Requisitos, límites, acoplamiento y simplicidad proporcional | Context diagram, supuestos y dos alternativas razonables |
+| H1 — Checkout lento | Usuarios móviles experimentan latencia alta | Presupuesto de latencia, llamadas en cadena, caché y percepción de espera | Secuencia causal y opciones con costes |
+| H2 — Pago duplicado | Un usuario reintenta después de perder la respuesta | Entrega/reintentos, idempotencia, estados y responsabilidades por capa | Tabla de estados, contrato y recorrido del fallo |
+| H3 — Equipos autónomos | Tres equipos solicitan desplegar de forma independiente | Límites de dominio, ownership, coordinación y coste de distribución | Mapa de responsabilidades y análisis de alternativas |
+| H4 — Conectividad inestable | Una operación se interrumpe a mitad de camino | Fallos parciales, consistencia, recuperación y experiencia de usuario | Traza de fallo y criterios de recuperación |
+| H5 — Auditoría de seguridad | Se detectan riesgos de permisos y exposición de datos | Activos, fronteras de confianza, amenazas y defensa en profundidad | Modelo de amenazas proporcional y controles verificables |
+| H6 — Pico de demanda | La carga sube diez veces durante una campaña | Cuellos de botella, capacidad, backpressure, degradación y coste | Hipótesis de cuello de botella y plan de medición |
+| H7 — Modernización | La plataforma debe evolucionar con presupuesto fijo | Deuda, reversibilidad, migración incremental y señales de abandono | ADR, ruta por etapas y condiciones de revisión |
 
-### Nivel 3: escala asimétrica
-**Supuesto:** tráfico de lectura del catálogo crece 30× y pedidos 2×. **Reto:** identificar las métricas que faltan, probar hipótesis de cuello de botella y comparar índice, caché, réplica, CDN, separación de carga y nueva arquitectura. **Entregable:** experimento + ADR condicional.
+## Cómo abordar un caso sin convertirlo en examen permanente
 
-### Nivel 4: continuidad y operaciones
-Negocio exige despliegues frecuentes con riesgos limitados. **Reto:** SLI/SLO tentativos, backup/restore probado, rollback, alertas accionables, manejo de incidentes y presupuesto. **Entregable:** plan operativo + señal de revisión.
+El tutor debe comprobar primero si faltan fundamentos y enseñarlos cuando sea necesario. Según el caso, puede recorrer algunas de estas preguntas; no es obligatorio formularlas todas ni hacerlas en turnos separados:
 
-### Nivel 5: cambio organizativo
-Dos equipos operan catálogos y pedidos con calendarios independientes. **Reto:** autonomía vs costos de distribución, ownership de datos, contratos, seguridad, migración y compensaciones. **Entregable:** arquitectura evolucionada y estrategia incremental.
+1. ¿Qué problema estamos intentando resolver y para quién?
+2. ¿Qué mecanismo causa el comportamiento observado?
+3. ¿Qué supuestos y garantías estamos dando por hechos?
+4. ¿Qué alternativas son realmente viables y qué coste trae cada una?
+5. ¿Qué resultado o fallo podemos predecir?
+6. ¿Qué dato, prueba o señal nos permitiría validar la hipótesis?
+7. ¿Qué principio se transfiere a otro contexto y qué tendría que cambiar?
 
-## Banco de transferencias (no equivalentes exactos)
-- **Citas médicas:** doble reserva y cancelación; ponderar consistencia, auditoría y experiencia de usuario.
-- **Notificaciones masivas:** deduplicación, retries, tasa, backpressure, costes y gestión de proveedores.
-- **Fintech ledger:** trazabilidad, dinero como invariante, conciliación, seguridad y cambios auditables.
-- **Biblioteca universitaria:** picos de inscripción, control de cupos, compatibilidad de contratos.
-- **Legado empresarial:** despliegues acoplados, schema evolution, strangler incremental y ownership.
+Si el estudiante no conoce un concepto necesario, no lo penalices por no adivinarlo: explícalo con un ejemplo trabajado y después, si resulta útil, comprueba la comprensión. Solo activa un laboratorio extenso cuando el estudiante lo solicite o acepte la propuesta.
 
-## Inyecciones para el reviewer (usar máximo una por ronda)
-- El presupuesto operativo se reduce 40%.
-- Falló una dependencia externa durante 30 minutos.
-- Se detecta inconsistencia sin pérdida de datos pero con impacto económico.
-- El equipo no puede operar un broker 24/7.
-- Dos equipos disputan propiedad de la misma entidad.
-- Un requisito regulatorio obliga a conservar evidencia de cambios.
+## Escenarios de transferencia
 
-El tutor **no debe revelar todas estas inyecciones al abrir una simulación**. La elección será contextual y no un castigo por no anticipar un dato invisible. Si surge un dato nuevo, se espera revisar la decisión, no adivinarlo.
+- Plataforma educativa con vídeo, exámenes y conectividad variable.
+- Fintech con transacciones sensibles y requisitos de auditoría.
+- SaaS B2B multi-tenant con permisos y aislamiento de datos.
+- Portal público con accesibilidad estricta y picos de tráfico.
+- Sistema interno que debe modernizarse sin interrumpir la operación.
 
-## Contrato de caso
-- Antes: objetivo de competencia, restricciones dadas, datos desconocidos y producto esperado.
-- Durante: una pregunta por turno; no resolver antes de intento; variar rol cuando resulte útil.
-- Después: puntos fuertes, 1–2 problemas prioritarios, alternativa fuerte, validación, evidencia (solo si hubo respuesta) y seguimiento.
-
-## Evaluación
-Priorizar comprensión de objetivos, invariante, alternativas, causalidad, modos de fallo, costos y capacidad de **cambiar razonadamente de postura**. No puntuar por cantidad de cajas del diagrama ni tecnologías citadas.
+El propósito no es memorizar la solución de Horizonte, sino reconocer invariantes, detectar diferencias relevantes y adaptar el razonamiento al nuevo contexto.

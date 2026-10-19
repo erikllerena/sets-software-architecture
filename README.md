@@ -1,35 +1,40 @@
-# SETS · Software Architecture & Design
+# SETS | Software Architecture & Design
 
-Este repositorio contiene **el programa de aprendizaje de Arquitectura y Diseño de Software**, configurado para desarrollar competencias profesionales de **Software Architect**. Es una disciplina que usa **SETS Framework v1.3.1**, no el framework mismo.
+**Programa v1.5.0 · SETS Framework v1.4.0**
 
-**Objetivos complementarios:** entrevista técnica próxima (track inmediato) y formación profunda a largo plazo (track permanente).
+## Misión
+Desarrollar comprensión conceptual profunda, razonamiento causal, criterio arquitectónico y capacidad para diseñar, evaluar y evolucionar sistemas completos.
 
-```text
-sets-software-architecture/
-├── PROJECT_CONFIG.yaml
-├── learning/
-│   ├── CURRICULUM.md
-│   ├── INTERVIEW_SPRINT.md
-│   ├── CASEBOOK.md
-│   └── REFERENCES.md
-├── state/
-│   ├── LEARNING_STATE.md
-│   ├── EVIDENCE_LOG.md
-│   └── LAST_HANDOFF.md
-├── decisions/
-├── labs/
-└── SETUP_CHATGPT.md
-```
+## Alcance
+Arquitectura end-to-end: requisitos, límites, componentes, contratos, interacción entre cliente/servidor/datos/infraestructura, atributos de calidad, seguridad, operación, comunicación y evolución. Este programa es **autosuficiente**: explica aquí los conceptos necesarios y no depende de cursar otras especializaciones.
 
-## Uso
+## Filosofía de aprendizaje
+- **Concepto antes que herramienta.** Comprender el problema, el mecanismo, los supuestos, los límites y las consecuencias antes de centrarse en la implementación.
+- **Neutralidad tecnológica real.** No existe un lenguaje ni stack obligatorio. Se puede utilizar cualquier lenguaje, protocolo, plataforma, diagrama, tabla de estados o pseudocódigo si ayuda a comprender.
+- **El tutor elige con criterio.** Si la elección de tecnología cambia materialmente la explicación o el ejercicio, ofrece 2–3 opciones breves. Si no, elige la representación más esclarecedora y explica por qué en una frase.
+- **Comparar para comprender, no para coleccionar stacks.** Contrastar implementaciones cuando permita identificar qué permanece constante y qué cambia; evitar comparaciones artificiales.
+- **Profundidad adaptativa.** Las lentes conceptuales de SETS guían la enseñanza, pero no son una secuencia rígida ni una escala de dominio.
+- **Práctica optativa por defecto.** Laboratorios, código y entregables extensos se proponen cuando aportan valor; el análisis, los diagramas y las predicciones también desarrollan criterio.
+- **Evidencia honesta.** Haber recibido una explicación no equivale a haber demostrado comprensión. El progreso se basa en respuestas y artefactos observables.
 
-1. Mantén también el repositorio **`sets-framework`**. GitHub no comparte los archivos automáticamente entre repositorios.
-2. Sigue [`SETUP_CHATGPT.md`](SETUP_CHATGPT.md) para combinar ambos repositorios en **un Proyecto de ChatGPT** llamado `SETS | Software Architecture`.
-3. Ajusta `PROJECT_CONFIG.yaml` con los datos de tu entrevista cuando los conozcas. `assessed_level: null` significa **aún sin evaluar**.
-4. Empieza con `/start` (diagnóstico) o `/sprint` (entrevista).
-5. Al terminar con `/close`, guarda `state/LAST_HANDOFF.md`, reemplaza `state/LEARNING_STATE.md` y añade únicamente las nuevas entradas observadas a `state/EVIDENCE_LOG.md`; compara IDs para evitar duplicación.
-6. Confirma cambios en GitHub y actualiza los adjuntos correspondientes en ChatGPT. **Guardar en GitHub no actualiza por sí solo los archivos del Proyecto.**
+## Archivos principales
+- `CHATGPT_PROJECT_INSTRUCTIONS.md`: instrucciones activas para el Proyecto de ChatGPT.
+- `PROJECT_RULES.md`: contrato pedagógico específico y detallado.
+- `PROJECT_CONFIG.yaml`: configuración del programa; no es evidencia de dominio.
+- `learning/CURRICULUM.md`: competencias `G00–G12`.
+- `learning/CASEBOOK.md`: escenarios de arquitectura integral y transferencia.
+- `learning/INTERVIEW_SPRINT.md`: modo opcional para preparación de entrevistas.
+- `learning/REFERENCES.md`: referencias recomendadas, no curso obligatorio.
+- `state/LEARNING_STATE.md`, `state/EVIDENCE_LOG.md`: síntesis de progreso y evidencias reales.
+- `state/CONCEPT_MAP.md`: mapa conceptual opcional y propio de este proyecto.
+- `state/LAST_HANDOFF.md`: se crea tras el primer cierre real; no se adjunta vacío.
+- `SETUP_CHATGPT.md`: instrucciones para instalar el programa y sus fuentes.
 
-La bibliografía específica de arquitectura vive en `learning/REFERENCES.md`; la política general para evaluar fuentes está en `sets-framework/docs/REFERENCE_POLICY.md`.
+## Inicio rápido
+1. Utiliza los motores genéricos de `sets-framework` v1.4.0.
+2. Sigue `SETUP_CHATGPT.md`: pega solo `CHATGPT_PROJECT_INSTRUCTIONS.md` en las instrucciones del Proyecto y carga las fuentes indicadas.
+3. Usa `/start` para diagnóstico seguido de enseñanza conceptual, o `/learn <tema>` para empezar a aprender directamente.
+4. Usa `/lab <tema>` si deseas una práctica implementable. No se inicia un laboratorio automáticamente tras el diagnóstico.
+5. Al terminar una sesión, usa `/close`, revisa los artefactos, guárdalos en este repositorio y actualiza manualmente las fuentes del Proyecto.
 
-Es preferible que este repositorio sea **privado** si contendrá evaluaciones personales o notas privadas; no subas credenciales ni datos propietarios.
+Los archivos de progreso parten de cero por decisión del estudiante. No hay sincronización automática entre GitHub y ChatGPT. No subas secretos, datos sensibles ni código propietario.

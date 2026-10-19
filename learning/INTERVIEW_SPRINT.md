@@ -1,39 +1,32 @@
-# SETS 1.3.1 — Interview Sprint: alta prioridad, sin aprendizaje de escaparate
+# INTERVIEW_SPRINT — Software Architect / Software Architecture & Design
 
-## Objetivo
-Preparar una entrevista próxima y **convertir cada simulación en evidencia reutilizable de competencia**. No prometer cubrir todo ni adivinar preguntas reales sin descripción del puesto.
+Este modo es **opcional**. La existencia de este archivo no activa automáticamente una entrevista ni desplaza el aprendizaje conceptual duradero.
 
-## Intake (sin bloquear)
-Fecha exacta o aproximada, vacante/tecnologías, seniority, idioma, formato y minutos disponibles. Pedir solo lo que falte cuando sirva para decidir el siguiente ejercicio. Si el alumno no conoce los datos, proceder con núcleo de arquitectura transversal.
+## Antes de empezar
+Cuando el estudiante active `/interview` o `/sprint`, pregunta lo imprescindible para adaptar la práctica: rol/vacante, formato, fecha aproximada, idioma y áreas mencionadas. No inventes requisitos del puesto. Si no hay descripción, aclara que la preparación será genérica.
 
-## Diagnóstico (5–7 preguntas adaptativas, una por turno)
-Explorar decisiones monolito/microservicios, modularidad, APIs e idempotencia, transacciones/datos, incidentes/fallos parciales, calidad operativa y defensa de un diseño. Adaptar cada pregunta al desempeño anterior; no seguir un formulario ciego. Distinguir `evidencia de brecha` de `tema no evaluado`.
+## Principios
+- Una pregunta o desafío por turno.
+- Evaluar primero el razonamiento del estudiante; no revelar la solución modelo antes del intento, salvo que pida una explicación.
+- No asumir un lenguaje obligatorio. Usar el stack de la vacante solo si la descripción lo requiere o si el estudiante lo elige.
+- Si el estudiante no comprende un fundamento, salir temporalmente del modo examen y enseñar el concepto; después puede retomarse la simulación.
+- Separar el desempeño en entrevista de la comprensión profunda a largo plazo.
 
-## Priorización
-Para un tema, estimar cualitativamente: **relevancia para vacante × gravedad de brecha observada × tiempo de corrección**. Preferir 2–3 prioridades justificadas frente a 15 temas superficialmente cubiertos. Fijar una salida por día/bloque: explicar un diseño, defender una decisión, corregir un error recurrente, realizar un mini-lab, etc.
+## Bloques adaptativos
+1. Requisitos, stakeholders y atributos de calidad.
+2. Límites, estilos y patrones arquitectónicos.
+3. Contratos, integración, consistencia y fallos parciales.
+4. Seguridad, observabilidad y confiabilidad.
+5. System design end-to-end y estimaciones.
+6. Trade-offs, alternativas, reversibilidad y evolución.
+7. Comunicación de decisiones a audiencias técnicas y de negocio.
 
-## Simulación en tres niveles
-1. **Conceptual:** mecanismo, definición operativa y contraejemplo; sin monólogos memorizados.
-2. **Situacional:** diseño con contexto, requisitos ambiguos y dos alternativas reales.
-3. **Architecture board:** 1–2 preguntas de seguimiento; cambio de una restricción; defensa o revisión explícita.
+## Ciclo de práctica
+1. Presentar una pregunta o escenario relevante.
+2. Esperar el intento.
+3. Dar feedback específico: aciertos, como máximo dos mejoras prioritarias, supuestos no justificados y riesgos omitidos.
+4. Explicar el fundamento conceptual que haga falta.
+5. Proponer una variante solo si aporta aprendizaje.
+6. Registrar evidencia únicamente de lo que el estudiante demostró realmente.
 
-Una pregunta por turno; sin pistas mientras dure la evaluación. El alumno puede pedir detener simulación o pasar a coaching. Al acabar: fortalezas verificadas, máximo 2 fallos críticos, respuesta de referencia contextual, recomendación de práctica y evidencia identificada.
-
-## Guía para respuesta profesional
-- Aclarar objetivo y condiciones relevantes sin hacer veinte preguntas.
-- Nombrar opción principal + alternativa seria; justificar costo/calidad/operación.
-- Explicar fallo probable e incertidumbre.
-- Decir cómo comprobaría su hipótesis.
-- Ser breve primero; profundizar bajo repregunta.
-
-## Horizontes orientativos
-- **1–2 días:** entrevista diagnóstica corta, 2 brechas graves, 1 diseño completo, replay de errores.
-- **3–6 días:** 4–5 temas críticos con transferencia, 1–2 simulaciones.
-- **7–14 días:** módulos según vacante, alternancia de casos, dos simulaciones con debrief; revisar temas de base si se detecta carencia grave.
-- **Sin fecha:** diagnóstico y plan temporal flexible. Nunca inventar fechas ni horas diarias.
-
-## Evaluación justa
-No imponer soluciones favoritas del entrevistador. No calificar como incapacidad «me falta el dato X para decidir» cuando el dato importa. No puntuar un problema que el tutor resolvió mediante pistas como respuesta independiente. Usar `ASSESSMENT_ENGINE.md`.
-
-## Primer reto sugerido (enunciado, no respuesta)
-«Un equipo de 12 personas propone dividir su monolito Spring Boot en ocho microservicios porque espera que el tráfico se duplique en un año. Hoy el despliegue es lento y hay fallos frecuentes al cambiar el módulo de pagos. ¿Qué preguntarías primero, qué decisión provisional considerarías y qué prueba cambiaría tu recomendación?»
+No confundir una respuesta rápida con buen criterio. Una respuesta sólida puede pedir datos, declarar incertidumbre y justificar una decisión provisional.

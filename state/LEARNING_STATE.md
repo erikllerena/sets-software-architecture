@@ -1,53 +1,46 @@
-# SETS — LEARNING_STATE.md | inicializado con framework v1.3.1
+# SETS — LEARNING_STATE | Software Architecture & Design
 
-**Estado actualizado por:** revisión estática de SETS v1.3.1 (NO corresponde a una sesión de estudio)
-**Última actualización:** 2026-10-15
-**Sesión más reciente:** ninguna
-**Último `session_id` integrado:** ninguno
-**Objetivo profesional:** Software Architect
-**Track de corto plazo:** entrevista próxima (fecha y puesto por conocer)
-**Track permanente:** formación profesional rigurosa
-**Nivel global:** NO evaluado; no inferir del historial laboral
+**Programa:** v1.5.0  
+**Framework:** v1.4.0  
+**Último `session_id` integrado:** ninguno  
+**Estado:** Inicio limpio elegido por el estudiante. Sin sesiones evaluadas en este programa.
 
-## 1. Contexto útil
-- Experiencia previa declarada: Java/Spring Boot, front-end, SQL/NoSQL, cloud, monolitos/microservicios.
-- Ajustar ejemplos al contexto sin suponer dominio.
-- Fecha de entrevista: desconocida. Formato/idioma: desconocidos. Horario: desconocido.
+## Objetivo
+Desarrollar comprensión conceptual profunda, razonamiento causal y criterio arquitectónico end-to-end para diseñar, evaluar, comunicar y evolucionar sistemas completos.
 
-## 2. Habilidad por módulo (resumen, no duplicar evidencias)
-| Módulo | Estado | Últimas evidencias (ID) | Gap prioritario | Próximo desafío / revisión |
+## Competencias
+| Módulo | Tema | Estado | Evidencia | Próximo paso |
 |---|---|---|---|---|
-| M01 CS aplicadas | No evaluado | — | Por diagnosticar | Cuando surja prerrequisito |
-| M02 Diseño de código | No evaluado | — | Por diagnosticar | Diagnóstico |
-| M03 Arquitecturas de aplicación | No evaluado | — | Por diagnosticar | Diagnóstico |
-| M04 DDD y límites | No evaluado | — | Por diagnosticar | Roadmap |
-| M05 APIs | No evaluado | — | Por diagnosticar | Diagnóstico |
-| M06 Datos | No evaluado | — | Por diagnosticar | Diagnóstico |
-| M07 Sistemas distribuidos | No evaluado | — | Por diagnosticar | Diagnóstico |
-| M08 Calidad y resiliencia | No evaluado | — | Por diagnosticar | Diagnóstico |
-| M09 Seguridad | No evaluado | — | Por diagnosticar | Roadmap |
-| M10 Cloud y operación | No evaluado | — | Por diagnosticar | Roadmap |
-| M11 Comunicación/ADR | No evaluado | — | Por diagnosticar | Primera defensa |
-| M12 System design | No evaluado | — | Por diagnosticar | Primer caso |
-| M13 Evolución | No evaluado | — | Por diagnosticar | Roadmap |
-| M14 Capstone | No evaluado | — | Ninguno | Posterior |
+| G00 | Diagnóstico arquitectónico transversal | No evaluado | — | Diagnóstico contextual |
+| G01 | Pensamiento arquitectónico y requisitos | No evaluado | — | Identificar drivers y criterios de éxito |
+| G02 | Fundamentos del sistema completo | No evaluado | — | Razonar sobre un recorrido end-to-end |
+| G03 | Límites, acoplamiento y diseño modular | No evaluado | — | Comparar fronteras y dependencias |
+| G04 | Atributos de calidad y evaluación | No evaluado | — | Formular un escenario verificable |
+| G05 | Estilos y patrones arquitectónicos | No evaluado | — | Comparar alternativas contextuales |
+| G06 | Contratos, integración y flujo de información | No evaluado | — | Analizar garantías y fallos |
+| G07 | Seguridad, privacidad y confianza end-to-end | No evaluado | — | Identificar activos y fronteras de confianza |
+| G08 | System design integral | No evaluado | — | Componer una solución con supuestos explícitos |
+| G09 | Operabilidad, confiabilidad y experiencia | No evaluado | — | Definir señales y recuperación |
+| G10 | Comunicación, documentación y gobernanza | No evaluado | — | Comunicar una decisión y su contexto |
+| G11 | Evolución, modernización y reversibilidad | No evaluado | — | Diseñar una evolución incremental |
+| G12 | Capstone end-to-end | No evaluado | — | Integración después de reunir evidencia suficiente |
 
-## 3. Prioridades actuales (máximo 3)
-1. Iniciar diagnóstico con una decisión arquitectónica contextual.
-2. Detectar brechas de alto impacto para la entrevista real.
-3. Diseñar un primer caso de transferencia sin solución prefabricada.
+## Dimensiones conceptuales a observar
+No son una escala adicional ni se puntúan automáticamente. Se registran solo cuando exista evidencia:
+- Explicación del problema y propósito.
+- Comprensión del mecanismo causal y de invariantes.
+- Reconocimiento de supuestos, límites y fallos.
+- Comparación de alternativas y trade-offs.
+- Transferencia independiente a un contexto nuevo.
 
-## 4. Decisiones técnicas y artefactos producidos
-Ninguno realizado aún. Los ejemplos de los archivos de SETS **no son trabajos del estudiante**.
+## Brechas priorizadas
+Sin evaluación. No inferir nivel a partir de experiencia laboral, familiaridad con tecnologías o lectura pasiva.
 
-## 5. Agenda de revisiones (solo propuestas; no hay tareas automáticas)
-Ninguna hasta obtener evidencia; fechas sugeridas al cerrar una sesión.
+## Artefactos reales
+Ninguno registrado en esta plantilla.
 
-## 6. Último handoff integrado
-Ninguno. Un handoff futuro debe incluir `session_id` para evitar duplicados.
+## Revisiones programadas
+Ninguna hasta tener evidencia.
 
-## 7. Siguiente acción única
-`/start`: realizar primera pregunta del diagnóstico y esperar respuesta.
-
-## 8. Límites de confianza
-Toda evaluación se basa en evidencia registrada en `EVIDENCE_LOG.md`. Si un archivo no está disponible, indicar que el estado es parcial en lugar de inventar continuidad.
+## Siguiente paso
+`/start` para comenzar desde cero; `/learn <tema>` para iniciar enseñanza conceptual sin diagnóstico previo; `/resume` solo después de un cierre real.

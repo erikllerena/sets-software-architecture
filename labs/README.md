@@ -1,5 +1,3 @@
-# Laboratorios
+# Labs — Software Architecture & Design
 
-Aquí se guardarán en subdirectorios los experimentos verificables: código, tests, instrucciones para ejecutar, observaciones, hipótesis y limitaciones. No inventar benchmarks ni resultados de ejecución.
-
-No guardar secretos, credenciales, datos de clientes o propiedad intelectual del empleador.
+Guardar ejercicios, diagramas y pruebas **realmente realizados**. Un laboratorio conceptual puede consistir en un diseño argumentado; código y tests solo cuentan como ejecutados con evidencia. No se inventan resultados de browser/profiler/servidor.
