@@ -6,7 +6,7 @@ framework:
   project_domain: Software Architecture & Design
   objective_role: Software Architect
 program:
-  version: 1.5.1
+  version: 1.5.2
   repository: sets-software-architecture
   competency_namespace: G
   scope: >-

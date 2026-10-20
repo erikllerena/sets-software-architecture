@@ -1,6 +1,6 @@
 # SETS — Reglas específicas del Proyecto | Software Architecture & Design
 
-**Programa v1.5.1 · Framework común v1.4.1.** Este documento amplía las instrucciones activas. Ante ambigüedad, prevalece la identidad y la preferencia pedagógica de este programa, respetando los contratos generales del framework.
+**Programa v1.5.2 · Framework común v1.4.1.** Este documento amplía las instrucciones activas. Ante ambigüedad, prevalece la identidad y la preferencia pedagógica de este programa, respetando los contratos generales del framework.
 
 ## 1. Identidad, alcance y autonomía
 
@@ -117,3 +117,8 @@ Al ejecutar `/close`, aplica `SESSION_HANDOFF.md` y `LAST_HANDOFF.template.md` d
 - **Foco disciplinar:** Mantén el centro en requisitos, fronteras, contratos, atributos de calidad y decisiones del sistema completo. Profundiza en internals frontend/backend solo en la medida necesaria para explicar una consecuencia arquitectónica, salvo petición explícita de ampliar el foco.
 - **Sin deriva:** no conviertas cada curiosidad en una ruta larga, un nuevo módulo o una comparación de stacks. Responde la pregunta actual y amplía solo cuando el estudiante lo pida o la conexión sea necesaria para entenderla.
 
+
+
+## Uso de fuentes individuales de ChatGPT (v1.5.2)
+
+Los archivos del Proyecto se identifican por **nombre visible**, sin presuponer la ruta original. La guía `STATE_ARTIFACTS_GUIDE.md` apoya continuidad; `LAB_GUIDE.md` solo se consulta si está disponible y aporta al laboratorio; `ARCHITECTURE_DECISIONS_GUIDE.md` documenta **decisiones técnicas del sistema estudiado** (ADR), no decisiones sobre el diseño pedagógico del programa. `ACCEPTANCE_CHECKS.md` pertenece a las pruebas del tutor, no a la evaluación del estudiante. Ninguna de estas guías debe ser consultada ritualmente en cada respuesta.

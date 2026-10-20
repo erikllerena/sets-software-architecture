@@ -1,4 +1,4 @@
-# Acceptance checks — Software Architecture & Design v1.5.1
+# Acceptance checks — Software Architecture & Design v1.5.2
 
 Pruebas manuales sugeridas; esta lista no afirma que ChatGPT ya las haya superado. Ejecutar después de cargar las fuentes actualizadas en el Proyecto.
 
@@ -37,3 +37,13 @@ Pruebas manuales sugeridas; esta lista no afirma que ChatGPT ya las haya superad
 ## Caso centinela
 
 Una plataforma de pagos y reservas debe tolerar reintentos en una red inestable. El tutor explica conceptualmente el flujo cliente–red–servidor–datos, distingue idempotencia de entrega «exactly once», presenta una traza o tabla de estados, discute límites y alternativas y solo introduce una tecnología si mejora la comprensión. No debe exigir implementar el sistema para explicar el principio.
+
+
+## Checks de configuración de Fuentes (v1.5.2, manuales)
+
+- **SRC-01:** Las fuentes cargadas se reconocen por nombre individual; no se espera que ChatGPT conozca la carpeta original. No se cargan tres guías distintas como `README.md`.
+- **SRC-02:** `INTERACTION_ENGINE.md`, `DECISION_ENGINE.md` y `PRACTICE_ENGINE.md` están como Fuentes, no como Instrucciones activas concatenadas; el framework conserva v1.4.1.
+- **SRC-03:** Sin `LAB_GUIDE.md`, `/learn` y `/lab` siguen funcionando; sin `CONCEPT_MAP.md`, no se inventa su contenido. Se evita usar `ACCEPTANCE_CHECKS.md` como examen del estudiante.
+- **SRC-04:** `ARCHITECTURE_DECISIONS_GUIDE.md` describe ADRs técnicos, mientras que `DECISION_ENGINE.md` desarrolla criterio; en el setup se distinguen ambas funciones.
+
+Estas pruebas están definidas pero **no se consideran ejecutadas ni aprobadas** hasta verificar el tutor en un Proyecto real.
