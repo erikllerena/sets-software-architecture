@@ -1,12 +1,12 @@
-# Configuración del programa. La familiaridad tecnológica es contexto opcional, no prerrequisito.
+# Configuración del programa. Tecnologías familiares = contexto opcional, no whitelist ni stack predeterminado.
 framework:
   name: SETS — Software Engineering Training System
-  version: 1.4.0
+  version: 1.4.1
   independent: true
   project_domain: Software Architecture & Design
   objective_role: Software Architect
 program:
-  version: 1.5.0
+  version: 1.5.1
   repository: sets-software-architecture
   competency_namespace: G
   scope: >-
@@ -17,6 +17,7 @@ student:
     Desarrollar comprensión conceptual profunda, razonamiento causal, juicio arquitectónico y capacidad para
     diseñar, evaluar, comunicar y evolucionar sistemas completos.
   role_context: Full Stack Developer
+  # Lista de referencia contextual: no es whitelist, stack predeterminado ni cuota de uso.
   familiar_technologies_as_optional_context:
     - Java / Spring Boot
     - TypeScript / Angular
@@ -82,6 +83,15 @@ learning_preference:
     - simplified_model
     - documented_behavior
     - hypothesis_or_inference
+learning_scope:
+  curriculum_is_open_map_not_ceiling: true
+  teach_relevant_off_curriculum_topics: true
+  casebook_is_non_exhaustive: true
+  use_new_or_student_provided_cases_when_helpful: true
+  depth_model: [foundation, deepening, specialization]
+  depth_levels_are_not_mandatory_stages: true
+  preserve_program_domain: true
+  avoid_unrequested_scope_expansion: true
 practice:
   default_stack: null
   allow_any_language_or_stack: true
@@ -124,4 +134,8 @@ examples:
   if_choice_does_not_matter: choose_and_briefly_explain_why
   comparison_rule: >-
     Show shared principles/invariants first and implementation differences second; compare only when it improves understanding.
+  familiar_technologies_are_not_a_whitelist: true
+  familiar_stack_is_not_a_default: true
+  explore_unfamiliar_technologies_when_useful: true
+  no_forced_novelty: true
   avoid: fixed_stack, gratuitous_stack_surveys, duplicated_code_comparisons, assuming_language_mastery

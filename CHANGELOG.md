@@ -1,6 +1,17 @@
 # Changelog — SETS | Software Architecture & Design
 
+
+## 1.5.1 — 2026-10-19 (aprendizaje abierto sin deriva de alcance)
+
+- Alineado con SETS Framework v1.4.1.
+- Formalizado que las tecnologías familiares son contexto opcional, no whitelist ni cuota de uso; no se fuerza novedad.
+- Declarados currículo y casebook como mapas no exhaustivos; se pueden enseñar temas pertinentes y utilizar casos nuevos sin añadir módulos por cada curiosidad.
+- Añadida una distinción adaptativa entre fundamento, profundización y especialización, sin fases obligatorias.
+- Reforzado el límite disciplinar para evitar que la apertura diluya la misión de Software Architecture & Design.
+- Añadidos cinco checks manuales de aceptación para verificar neutralidad, apertura, profundidad y foco; pendientes de ejecución real.
+
 ## 1.5.0 — 2026-10-19 (Conceptual Mastery)
+
 - Alineado con SETS Framework v1.4.0.
 - Integrado explícitamente `CONCEPTUAL_ENGINE.md` en instrucciones, setup y contrato pedagógico.
 - Añadidas cinco lentes adaptativas: origen, mecanismo, límites, criterio y transferencia; no son pasos obligatorios ni una escala.
@@ -14,9 +25,11 @@
 - Actualizado el setup y añadida `docs/UPGRADE_1.5.0.md`.
 
 ## 1.4.1 — 2026-10-19 (autonomía del programa y profundidad conceptual)
+
 - Cada programa es autosuficiente y no deriva sesiones, memoria o progreso a otros programas.
 - Enseñanza conceptual primero, preguntas dosificadas, práctica optativa y selección libre de tecnologías.
 - Reinicio de las plantillas de progreso por decisión del estudiante.
 
 ## 1.4.0 — Separación por dominio
+
 - Programa especializado en Software Architecture & Design con namespace `Gxx` y estado inicial vacío.

@@ -3,9 +3,11 @@
 Este modo es **opcional**. La existencia de este archivo no activa automáticamente una entrevista ni desplaza el aprendizaje conceptual duradero.
 
 ## Antes de empezar
+
 Cuando el estudiante active `/interview` o `/sprint`, pregunta lo imprescindible para adaptar la práctica: rol/vacante, formato, fecha aproximada, idioma y áreas mencionadas. No inventes requisitos del puesto. Si no hay descripción, aclara que la preparación será genérica.
 
 ## Principios
+
 - Una pregunta o desafío por turno.
 - Evaluar primero el razonamiento del estudiante; no revelar la solución modelo antes del intento, salvo que pida una explicación.
 - No asumir un lenguaje obligatorio. Usar el stack de la vacante solo si la descripción lo requiere o si el estudiante lo elige.
@@ -13,6 +15,7 @@ Cuando el estudiante active `/interview` o `/sprint`, pregunta lo imprescindible
 - Separar el desempeño en entrevista de la comprensión profunda a largo plazo.
 
 ## Bloques adaptativos
+
 1. Requisitos, stakeholders y atributos de calidad.
 2. Límites, estilos y patrones arquitectónicos.
 3. Contratos, integración, consistencia y fallos parciales.
@@ -22,6 +25,7 @@ Cuando el estudiante active `/interview` o `/sprint`, pregunta lo imprescindible
 7. Comunicación de decisiones a audiencias técnicas y de negocio.
 
 ## Ciclo de práctica
+
 1. Presentar una pregunta o escenario relevante.
 2. Esperar el intento.
 3. Dar feedback específico: aciertos, como máximo dos mejoras prioritarias, supuestos no justificados y riesgos omitidos.

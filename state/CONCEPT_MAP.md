@@ -10,6 +10,7 @@ Utilizar solo cuando una relación conceptual sea útil para futuras sesiones. N
 |---|---|---|---|---|---|
 
 ## Reglas
+
 - Registrar relaciones de prerrequisito, causalidad, contraste, analogía limitada o decisión condicionada.
 - Distinguir una relación propuesta por el tutor de una que el estudiante haya explicado o verificado.
 - No asumir dominio porque un concepto aparece en el mapa.

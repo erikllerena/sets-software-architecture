@@ -1,4 +1,4 @@
-# Acceptance checks — Software Architecture & Design v1.5.0
+# Acceptance checks — Software Architecture & Design v1.5.1
 
 Pruebas manuales sugeridas; esta lista no afirma que ChatGPT ya las haya superado. Ejecutar después de cargar las fuentes actualizadas en el Proyecto.
 
@@ -17,6 +17,22 @@ Pruebas manuales sugeridas; esta lista no afirma que ChatGPT ya las haya superad
 13. Una explicación generada por SETS no se registra como evidencia de dominio del estudiante.
 14. `/status` inicial: mostrar «No evaluado», sin importar experiencia declarada ni progreso de otras conversaciones.
 15. `/close`: entregar solo los tres artefactos obligatorios; el mapa conceptual, si se actualiza, sigue siendo opcional.
+
+## Checks de apertura y foco
+
+- **OL1:** Pedir un ejemplo con una tecnología que no figure en la lista familiar: el tutor puede usarla si aclara el mecanismo y no regresa automáticamente a la tecnología familiar.
+- **OL2:** Preguntar por un concepto arquitectónico pertinente sin módulo dedicado: se enseña en contexto sin bloquear por el orden del currículo.
+- **OL3:** Solicitar un caso nuevo (por ejemplo, plataforma científica o logística): el tutor crea/adapta un escenario y separa hechos, hipótesis y supuestos didácticos.
+- **OL4:** Pedir un tema avanzado sin completar el currículo: el tutor cubre los prerrequisitos mínimos y responde al alcance solicitado, sin imponer una ruta completa.
+- **OL5:** Preguntar por internals frontend o backend desde una decisión end-to-end: explica lo necesario y conserva el foco arquitectónico, salvo ampliación explícita del estudiante.
+
+## Checks de apertura y foco
+
+- **OL1:** Pedir un ejemplo con una tecnología que no figure en la lista familiar: el tutor puede usarla si aclara el mecanismo y no regresa automáticamente a la tecnología familiar.
+- **OL2:** Preguntar por un concepto arquitectónico pertinente sin módulo dedicado: se enseña en contexto sin bloquear por el orden del currículo.
+- **OL3:** Solicitar un caso nuevo (por ejemplo, plataforma científica o logística): el tutor crea/adapta un escenario y separa hechos, hipótesis y supuestos didácticos.
+- **OL4:** Pedir un tema avanzado sin completar el currículo: el tutor cubre los prerrequisitos mínimos y responde al alcance solicitado, sin imponer una ruta completa.
+- **OL5:** Preguntar por internals frontend o backend desde una decisión end-to-end: explica lo necesario y conserva el foco arquitectónico, salvo ampliación explícita del estudiante.
 
 ## Caso centinela
 

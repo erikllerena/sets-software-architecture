@@ -1,14 +1,16 @@
 # SETS — LEARNING_STATE | Software Architecture & Design
 
-**Programa:** v1.5.0  
-**Framework:** v1.4.0  
+**Programa:** v1.5.1  
+**Framework:** v1.4.1  
 **Último `session_id` integrado:** ninguno  
 **Estado:** Inicio limpio elegido por el estudiante. Sin sesiones evaluadas en este programa.
 
 ## Objetivo
+
 Desarrollar comprensión conceptual profunda, razonamiento causal y criterio arquitectónico end-to-end para diseñar, evaluar, comunicar y evolucionar sistemas completos.
 
 ## Competencias
+
 | Módulo | Tema | Estado | Evidencia | Próximo paso |
 |---|---|---|---|---|
 | G00 | Diagnóstico arquitectónico transversal | No evaluado | — | Diagnóstico contextual |
@@ -26,6 +28,7 @@ Desarrollar comprensión conceptual profunda, razonamiento causal y criterio arq
 | G12 | Capstone end-to-end | No evaluado | — | Integración después de reunir evidencia suficiente |
 
 ## Dimensiones conceptuales a observar
+
 No son una escala adicional ni se puntúan automáticamente. Se registran solo cuando exista evidencia:
 - Explicación del problema y propósito.
 - Comprensión del mecanismo causal y de invariantes.
@@ -34,13 +37,17 @@ No son una escala adicional ni se puntúan automáticamente. Se registran solo c
 - Transferencia independiente a un contexto nuevo.
 
 ## Brechas priorizadas
+
 Sin evaluación. No inferir nivel a partir de experiencia laboral, familiaridad con tecnologías o lectura pasiva.
 
 ## Artefactos reales
+
 Ninguno registrado en esta plantilla.
 
 ## Revisiones programadas
+
 Ninguna hasta tener evidencia.
 
 ## Siguiente paso
+
 `/start` para comenzar desde cero; `/learn <tema>` para iniciar enseñanza conceptual sin diagnóstico previo; `/resume` solo después de un cierre real.

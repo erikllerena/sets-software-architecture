@@ -1,9 +1,11 @@
 # Upgrade — sets-software-architecture 1.4.1 → 1.5.0
 
 ## Objetivo
+
 Alinear el programa con **SETS Framework v1.4.0 / Conceptual Mastery** y hacer explícita su neutralidad tecnológica.
 
 ## Cambios principales
+
 - Actualizada la referencia del framework a v1.4.0 y el programa a v1.5.0.
 - `CHATGPT_PROJECT_INSTRUCTIONS.md` ahora referencia el motor `CONCEPTUAL_ENGINE.md` y explica las cinco lentes adaptativas.
 - `PROJECT_RULES.md` desarrolla enseñanza causal, límites de modelos/analogías, elección neutral de tecnología, transferencia y evaluación honesta.
@@ -16,6 +18,7 @@ Alinear el programa con **SETS Framework v1.4.0 / Conceptual Mastery** y hacer e
 - `SETUP_CHATGPT.md` incluye `CONCEPTUAL_ENGINE.md` como fuente esencial y explica cómo reemplazar las fuentes antiguas del Proyecto.
 
 ## Contratos preservados
+
 - Namespace de competencias `G00–G12`.
 - Evaluación 0–4 y ayudas H0–H4; las lentes conceptuales no son una escala nueva.
 - `/close` sigue produciendo tres artefactos obligatorios: `LAST_HANDOFF.md`, `LEARNING_STATE.md` completo y delta de `EVIDENCE_LOG.md`.
@@ -23,6 +26,7 @@ Alinear el programa con **SETS Framework v1.4.0 / Conceptual Mastery** y hacer e
 - Sincronización GitHub ↔ ChatGPT sigue siendo manual.
 
 ## Actualización recomendada
+
 1. Conserva el historial Git y copia los archivos del paquete respetando las rutas.
 2. En el Proyecto de ChatGPT, reemplaza las instrucciones activas por el nuevo `CHATGPT_PROJECT_INSTRUCTIONS.md`.
 3. Sustituye las fuentes de framework v1.3.2 por las versiones de `sets-framework` v1.4.0; asegúrate de cargar `core/CONCEPTUAL_ENGINE.md`.

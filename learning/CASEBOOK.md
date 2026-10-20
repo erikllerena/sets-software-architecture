@@ -1,6 +1,8 @@
-# CASEBOOK — Arquitectura integral y razonamiento causal (v1.5.0)
+# CASEBOOK — Arquitectura integral y razonamiento causal (v1.5.1)
 
 Los escenarios son ficticios; las cifras introducidas durante una sesión son supuestos educativos, no datos medidos. El tutor puede elegir diagramas, contratos, pseudocódigo o cualquier lenguaje que ayude a comprender. No es necesario programar cada caso.
+
+Los casos de este archivo son ejemplos iniciales, no un conjunto cerrado. Plataforma Horizonte es un caso conductor opcional para construir continuidad, no una parada obligatoria de cada sesión. Selecciona o crea casos nuevos si explican mejor el concepto o prueban transferencia; etiqueta supuestos ficticios y distingue los hechos reales que requieran verificación. El currículo y este casebook pueden evolucionar, pero no añadas módulos por cada curiosidad ni cambies IDs sin una revisión deliberada.
 
 ## Caso conductor: Plataforma Horizonte
 

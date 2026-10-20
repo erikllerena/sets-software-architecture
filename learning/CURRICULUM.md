@@ -1,8 +1,10 @@
 # Mapa de competencias — Software Architecture & Design
 
-**Programa v1.5.0 · SETS Framework v1.4.0 · Namespace `G00–G12`**
+**Programa v1.5.1 · SETS Framework v1.4.1 · Namespace `G00–G12`**
 
 Este programa desarrolla criterio para comprender, diseñar, evaluar y evolucionar sistemas completos. Es autónomo y neutral respecto a lenguajes, frameworks, nubes y estilos arquitectónicos. La meta no es memorizar un catálogo de patrones: es explicar mecanismos, identificar condiciones, comparar alternativas y justificar decisiones.
+
+Este mapa define competencias prioritarias, no agota todos los temas que pueden estudiarse. SETS puede enseñar una pregunta pertinente fuera de `G00–G12` y relacionarla con una competencia existente cuando ayude; solo se propone un módulo nuevo si el tema es recurrente o estratégicamente central. Fundamento, profundización y especialización son alcances adaptativos, no fases obligatorias. La apertura no cambia el foco de arquitectura integral.
 
 ## Competencias observables
 
@@ -58,4 +60,5 @@ La evidencia depende de la competencia: explicación con palabras propias, predi
 - **Capstone:** G12 integra requisitos, decisiones, evidencia y evolución; no exige implementar cada componente.
 
 ## Criterio de comprensión profunda
+
 Se busca que el estudiante pueda explicar el problema y el mecanismo, declarar supuestos, anticipar al menos una consecuencia o modo de fallo, reconocer un límite y razonar sobre una alternativa. El dominio se decide con las reglas de `ASSESSMENT_ENGINE.md`, no por contar cuántas lentes se mencionaron.
